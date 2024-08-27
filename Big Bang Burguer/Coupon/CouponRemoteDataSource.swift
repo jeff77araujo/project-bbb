@@ -1,22 +1,25 @@
 //
-//  SignInRemoteDataSource.swift
+//  CouponRemoteDataSource.swift
 //  Big Bang Burguer
 //
-//  Created by Jefferson Oliveira de Araujo on 24/07/24.
+//  Created by Jefferson Oliveira de Araujo on 20/08/24.
 //
 
 import Foundation
 
-class SignInRemoteDataSource {
+class CouponRemoteDataSource {
     
-    static let shared = SignInRemoteDataSource()
+    static let shared = CouponRemoteDataSource()
     
-    func login(request: SignInRequest, completion: @escaping (SignInResponse?, String?) -> Void) {
-        WebService.shared.call(path: .login, body: request, method: .post) { result in
+    func fetchCoupons(completion: @escaping (UserResponse?, String?) -> Void) {
+        
+        WebService.shared.call(path: .coupons, body: Optional<FeedRequest>.none, method: .get) { result in
+            
             switch result {
             case .success(let data):
                 guard let data else { return }
-                let response = try? JSONDecoder().decode(SignInResponse.self, from: data)
+                let response = try? JSONDecoder().decode(UserResponse.self, from: data)
+                print("CouponRemoteDataSource.fetchCoupons: \(String(describing: response))")
                 completion(response, nil)
                 break
                 
@@ -29,15 +32,12 @@ class SignInRemoteDataSource {
                     completion(nil, response?.detail.message)
                     break
                     
-                case .internalError:
-                    completion(nil, String(data: data, encoding: .utf8))
-                    break
-                    
                 default:
                     let response = try? JSONDecoder().decode(ResponseError.self, from: data)
                     completion(nil, response?.detail)
                     break
                 }
+                
                 break
             }
         }

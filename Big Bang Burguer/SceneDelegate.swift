@@ -27,21 +27,21 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                     guard let error else { return }
                     DispatchQueue.main.async {
                         if error {
-                            let signInCoordinator = SignInCoordinator(window: self.window)
+                            let signInCoordinator = SignInCoordinator(self.window)
                             signInCoordinator.start()
                         } else {
-                            let homeCoordinator = HomeCoordinator(window: self.window)
+                            let homeCoordinator = HomeCoordinator(self.window)
                             homeCoordinator.start()
                         }
                     }
                 }
             } else {
-                let homeCoordinator = HomeCoordinator(window: window)
+                let homeCoordinator = HomeCoordinator(window)
                 homeCoordinator.start()
             }
             
         } else {
-            let signInCoordinator = SignInCoordinator(window: window)
+            let signInCoordinator = SignInCoordinator(window)
             signInCoordinator.start()
         }
         

@@ -24,16 +24,16 @@ class HighlightView: UIView {
         return image
     }()
     
-    private let moreButton: UIButton = {
-        let button = UIButton()
-        button.setTitle("Resgatar cupom", for: .normal)
-        button.layer.borderColor = UIColor.systemBackground.cgColor
+    private lazy var moreButton: UIButton = {
+        let button = UIButton(configuration: .plain())
+        button.setTitle("Resgate essa promoção", for: .normal)
+        button.setTitleColor(.systemGray, for: .normal)
         button.layer.borderWidth = 2
         button.layer.cornerRadius = 5
         button.layer.borderColor = UIColor.lightGray.cgColor
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.contentEdgeInsets = UIEdgeInsets(top: 8, left: 12, bottom: 8, right: 12)
-        button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        button.configuration?.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 12, bottom: 8, trailing: 12)
+//        button.contentEdgeInsets = UIEdgeInsets(top: 8, left: 12, bottom: 8, right: 12)
+        button.addTarget(HighlightView.self, action: #selector(buttonTapped), for: .touchUpInside)
         return button
     }()
     
@@ -69,6 +69,8 @@ class HighlightView: UIView {
     
     private func createViews() {
         addSubview(moreButton)
+        
+        moreButton.translatesAutoresizingMaskIntoConstraints = false
         
         let constraints = [
             moreButton.centerXAnchor.constraint(equalTo: self.centerXAnchor),

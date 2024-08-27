@@ -102,5 +102,4 @@ class LoadingButton: UIView {
         
         NSLayoutConstraint.activate(constraints)
     }
-    
 }

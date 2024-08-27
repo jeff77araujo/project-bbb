@@ -70,15 +70,17 @@ class ProductDetailViewController: UIViewController {
     }()
     
     
-    let button: UIButton = {
-        let button = UIButton()
+    lazy var button: UIButton = {
+        let button = UIButton(configuration: .plain())
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Resgatar cupom", for: .normal)
+        button.setTitleColor(.white, for: .normal)
         button.layer.borderColor = UIColor.systemBackground.cgColor
         button.layer.borderWidth = 1
         button.layer.cornerRadius = 5
         button.backgroundColor = .systemRed
-        button.contentEdgeInsets = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
+        button.configuration?.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 12, bottom: 8, trailing: 12)
+        button.addTarget(self, action: #selector(couponTapped), for: .touchUpInside)
         return button
     }()
     
@@ -86,7 +88,6 @@ class ProductDetailViewController: UIViewController {
         let description = UILabel()
         description.translatesAutoresizingMaskIntoConstraints = false
         description.textAlignment = .left
-        description.textColor = .darkText
         description.numberOfLines = 0
         description.sizeToFit()
         description.font = .systemFont(ofSize: 16)
@@ -99,6 +100,7 @@ class ProductDetailViewController: UIViewController {
             viewModel?.delegate = self
         }
     }
+    
     // MARK: - VIEWDIDLOAD
     override func viewDidLoad() {
         view.backgroundColor = .systemBackground
@@ -172,12 +174,18 @@ class ProductDetailViewController: UIViewController {
 
 // MARK: - Extension Delegate
 extension ProductDetailViewController: ProductDetailViewModelDelegate {
+    
+    @objc func couponTapped() {
+        guard let id else { return }
+        viewModel?.createCoupon(id: id)
+    }
 
     func viewModelDidChanged(state: ProductDetailState) {
         switch(state) {
         case .loading:
             progress.startAnimating()
             break
+            
         case .success(let response):
             progress.stopAnimating()
             
@@ -190,11 +198,16 @@ extension ProductDetailViewController: ProductDetailViewModelDelegate {
             if let url = URL(string: response.pictureUrl) {
                 self.imageView.sd_setImage(with: url)
             }
-            
             break
-        case .error(let msg):
+            
+        case .successCoupon(let response):
             progress.stopAnimating()
-            print("ERROR: \(msg)")
+            Alert(title: "Cupom gerado", message: response.coupon).show(on: self)
+            break
+            
+        case .error(let message):
+            progress.stopAnimating()
+            alert(message: message)
             break
         }
     }

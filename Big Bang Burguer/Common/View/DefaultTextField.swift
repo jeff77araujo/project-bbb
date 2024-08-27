@@ -17,14 +17,12 @@ class DefaultTextField: UIView {
     lazy var textField: UITextField = {
         let textField = UITextField()
         textField.addTarget(self, action: #selector(textFieldDidChanged), for: .editingChanged)
-        textField.translatesAutoresizingMaskIntoConstraints = false
         return textField
     }()    
     
     lazy var errorMessage: UILabel = {
         let text = UILabel()
         text.textColor = .red
-        text.translatesAutoresizingMaskIntoConstraints = false
         return text
     }()
     
@@ -148,7 +146,10 @@ class DefaultTextField: UIView {
         addSubview(textField)
         addSubview(errorMessage)
         
-        let constraints = [
+        textField.translatesAutoresizingMaskIntoConstraints = false
+        errorMessage.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
             textField.leadingAnchor.constraint(equalTo: leadingAnchor, constant: -10),
             textField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 10),
             textField.heightAnchor.constraint(equalToConstant: 50),
@@ -157,10 +158,10 @@ class DefaultTextField: UIView {
             errorMessage.trailingAnchor.constraint(equalTo: textField.trailingAnchor),
             errorMessage.topAnchor.constraint(equalTo: textField.bottomAnchor),
             errorMessage.heightAnchor.constraint(equalToConstant: 20),
-        ]
+        ])
+        
         heightconstraints = heightAnchor.constraint(equalToConstant: 70)
         heightconstraints.isActive = true
         
-        NSLayoutConstraint.activate(constraints)
     }
 }

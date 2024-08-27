@@ -22,4 +22,8 @@ class LocalDataSource {
         }
         return nil
     }
+    
+    func deleteUserAuth() {
+        UserDefaults.standard.removeObject(forKey: "user_key")
+    }
 }

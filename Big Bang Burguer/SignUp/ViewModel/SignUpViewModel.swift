@@ -37,19 +37,8 @@ class SignUpViewModel {
     func send() {
         state = .loading
         
-        let dtString = DateFormatter()
-        dtString.locale = Locale(identifier: "en_US_POSIX")
-        dtString.dateFormat = "dd/MM/yyyy"
-        
-        guard let date = dtString.date(from: birthday) else { return }
-        
-        let dtDate = DateFormatter()
-        dtDate.locale = Locale(identifier: "en_US_POSIX")
-        dtDate.dateFormat = "yyyy-MM-dd"
-        
-        let birthdayFormatted = dtDate.string(from: date)
-        
-        let documentFormatted = document.digits
+        let documentFormatted = document.onlyNumbers
+        guard let birthdayFormatted = birthday.toDate()?.toString() else { return }
         
         let request = SignUpRequest(name: name,
                                     email: email,
@@ -61,7 +50,7 @@ class SignUpViewModel {
             DispatchQueue.main.async {
                 if let errorMessage = error {
                     self.state = .error(errorMessage)
-                } else if let created = created {
+                } else if let _ = created {
                     self.state = .goToLogin
                 }
             }

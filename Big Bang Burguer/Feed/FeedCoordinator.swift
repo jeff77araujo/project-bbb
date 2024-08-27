@@ -32,4 +32,8 @@ class FeedCoordinator {
         coordinator.parentCoordinator = self
         coordinator.start()
     }
+    
+    func goToLogin() {
+        parentCoordinator?.goToLogin()
+    }
 }

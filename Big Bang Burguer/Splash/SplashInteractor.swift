@@ -13,13 +13,7 @@ class SplashInteractor {
     private let local: LocalDataSource = .shared
     
     func login(request: SplashRequest, completion: @escaping (SignInResponse?, Bool?) -> Void) {
-        let userAuth = local.getUserAuth()
-        guard let accessToken = userAuth?.accessToken else {
-            completion(nil, true)
-            return
-        }
-        
-        remote.login(request: request, accessToken: accessToken) { response, error in
+        remote.login(request: request) { response, error in
             guard let response else { return }
             
             let userAuth = UserAuth(accessToken: response.accessToken,

@@ -40,7 +40,7 @@ class FeedViewController: UIViewController {
         super.viewDidLoad()
         
         configureComponents()
-        configureNavBar()
+        configure()
         
         viewModel?.fetch()
         viewModel?.fetchHighlight()
@@ -60,7 +60,12 @@ extension FeedViewController {
         view.addSubview(homeFeedTable)
         view.addSubview(progress)
         
-        headerView = HighlightView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 220))
+        headerView = HighlightView(frame: CGRect(x: 0, 
+                                                 y: 0,
+                                                 width: view.bounds.width,
+                                                 height: 220)
+        )
+        
         headerView.delegate = self
         
         homeFeedTable.tableHeaderView = headerView
@@ -69,12 +74,12 @@ extension FeedViewController {
         homeFeedTable.dataSource = self
     }
     
-    private func configureNavBar() {
+    private func configure() {
         
         navigationController?.tabBarItem.image = UIImage(systemName: "house")
         navigationController?.title = "Home"
         
-        navigationController?.navigationBar.prefersLargeTitles = false
+        navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.tintColor = UIColor.systemRed
         navigationItem.title = "Produtos"
         
@@ -89,14 +94,13 @@ extension FeedViewController {
             UIBarButtonItem(image: UIImage(systemName: "power"),
                             style: .done,
                             target: self,
-                            action: #selector(testDidTap)
+                            action: #selector(logoutDidTapped)
                            )
         ]
     }
     
-    @objc func testDidTap(_ sender: UIBarButtonItem) {
-        print("------------------------\n\n")
-        print("alguem clicou")
+    @objc func logoutDidTapped(_ sender: UIBarButtonItem) {
+        viewModel?.logout()
     }
 }
 
@@ -131,9 +135,17 @@ extension FeedViewController: UITableViewDataSource, UITableViewDelegate {
         
         var label = UILabel()
         if section == 0 {
-            label = UILabel(frame: CGRect(x: 20, y: 0, width: tableView.bounds.width, height: 40))
+            label = UILabel(frame: CGRect(x: 20, 
+                                          y: 0,
+                                          width: tableView.bounds.width,
+                                          height: 40)
+            )
         } else {
-            label = UILabel(frame: CGRect(x: 20, y: -10, width: tableView.bounds.width, height: 10))
+            label = UILabel(frame: CGRect(x: 20, 
+                                          y: -10,
+                                          width: tableView.bounds.width,
+                                          height: 10)
+            )
         }
         
         label.font = UIFont.systemFont(ofSize: 14, weight: .semibold)
@@ -187,8 +199,11 @@ extension FeedViewController: FeedViewModelDelegate, FeedCollectionViewDelegate,
             headerView.productId = response.id
             
             break
-        case .error(let msg):
+        case .error(let message):
             progress.stopAnimating()
+//            Alert(title: "Ops!", message: message).show(on: self)
+            alert(message: message)
+
             homeFeedTable.reloadData()
             break
         }

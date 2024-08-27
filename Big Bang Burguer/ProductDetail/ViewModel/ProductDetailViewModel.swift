@@ -36,14 +36,21 @@ class ProductDetailViewModel {
                     self.state = .error(errorMessage)
                 } else if let response = response {
                     self.state = .success(response)
-                    print("------------------------\n\n")
-                    print("ProductDetailViewModel.fetch: \(response)")
                 }
             }
         }
     }
     
-//    func goToProductDetail(id: Int) {
-//        coordinator?.goToProductDetail(id: id)
-//    }
+    func createCoupon(id: Int) {
+        self.state = .loading
+        interactor.createCoupon(id: id) { response, error in
+            DispatchQueue.main.async {
+                if let errorMessage = error {
+                    self.state = .error(errorMessage)
+                } else if let response = response {
+                    self.state = .successCoupon(response)
+                }
+            }
+        }
+    }
 }

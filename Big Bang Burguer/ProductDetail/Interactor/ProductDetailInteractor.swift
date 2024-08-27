@@ -13,13 +13,10 @@ class ProductDetailInteractor {
     private let local: LocalDataSource = .shared
     
     func fetch(id: Int, completion: @escaping (ProductResponse?, String?) -> Void) {
-        
-        let userAuth = local.getUserAuth()
-        guard let accessToken = userAuth?.accessToken else {
-            completion(nil, "Access token not found")
-            return
-        }
-        
-        return remote.fetch(id: id, accessToken: accessToken, completion: completion)
+        return remote.fetch(id: id, completion: completion)
+    }
+    
+    func createCoupon(id: Int, completion: @escaping (CouponResponse?, String?) -> Void) {
+        return remote.createCoupon(id: id, completion: completion)
     }
 }

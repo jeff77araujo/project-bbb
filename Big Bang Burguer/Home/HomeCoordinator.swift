@@ -5,36 +5,41 @@
 //  Created by Jefferson Oliveira de Araujo on 04/07/24.
 //
 
-import Foundation
 import UIKit
 
 class HomeCoordinator {
     
     private let window: UIWindow?
-//    private var navigationController = UINavigationController()
-    
-    let feedVC = UINavigationController()
-    let couponVC = UINavigationController()
-    let profileVC = UINavigationController()
 
-    init(window: UIWindow?) {
+    let feedVC = UINavigationController()
+    let profileVC = UINavigationController()
+    let couponVC = UINavigationController()
+    
+    private var signInCoordinator: SignInCoordinator?
+
+    init(_ window: UIWindow?) {
         self.window = window
-//        self.navigationController = UINavigationController()
     }
     
     func start() {
-        let viewModel = HomeViewModel()
-        viewModel.coordinator = self
-        
         let homeVC = HomeViewController()
-        homeVC.viewModel = viewModel
-//        navigationController.pushViewController(homeVC, animated: true)
         
         let feedCoordinator = FeedCoordinator(feedVC)
+        feedCoordinator.parentCoordinator = self
         feedCoordinator.start()
-                
-        homeVC.setViewControllers([feedVC], animated: true)
+        
+        let profileCoordinator = ProfileCoordinator(profileVC)
+        profileCoordinator.start()
+        
+        let couponCoordinator = CouponCoordinator(couponVC)
+        couponCoordinator.start()
+        
+        homeVC.setViewControllers([feedVC, profileVC, couponVC], animated: true)
         window?.rootViewController = homeVC
-//        window?.rootViewController = navigationController
+    }
+    
+    func goToLogin() {
+        signInCoordinator = SignInCoordinator(window)
+        signInCoordinator?.start()
     }
 }

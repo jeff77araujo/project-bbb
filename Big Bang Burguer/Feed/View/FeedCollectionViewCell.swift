@@ -40,7 +40,6 @@ class FeedCollectionViewCell: UICollectionViewCell {
         name.textAlignment = .center
         name.textColor = .red
         name.font = .systemFont(ofSize: 14)
-        name.text = "Error"
         return name
     }()
     
@@ -55,8 +54,6 @@ class FeedCollectionViewCell: UICollectionViewCell {
         price.layer.masksToBounds = true
         price.layer.borderColor = UIColor.lightText.cgColor
         price.layer.cornerRadius = 5
-        
-        price.text = "Error"
         return price
     }()
     
@@ -71,7 +68,6 @@ class FeedCollectionViewCell: UICollectionViewCell {
         imageView.frame = CGRect(x: 0, y: 0, width: bounds.size.width, height: bounds.size.height - 80)
         nameLabel.frame = CGRect(x: 0, y: bounds.size.height - 80, width: bounds.size.width, height: 28)
         priceLabel.frame = CGRect(x: 0, y: bounds.size.height - 50, width: bounds.size.width, height: 38)
-//        imageView.frame = bounds
     }
     
     required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }

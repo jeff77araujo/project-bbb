@@ -35,8 +35,6 @@ class FeedViewModel {
                     self.state = .error(errorMessage)
                 } else if let response = response {
                     self.state = .success(response)
-                    print("------------------------\n\n")
-                    print("FeedViewModel.fetch: \(response)")
                 }
             }
         }
@@ -49,8 +47,6 @@ class FeedViewModel {
                     self.state = .error(errorMessage)
                 } else if let response = response {
                     self.state = .successHighlight(response)
-                    print("------------------------\n\n")
-                    print("fetchHighlight: \(response)")
                 }
             }
         }
@@ -60,11 +56,8 @@ class FeedViewModel {
         coordinator?.goToProductDetail(id: id)
     }
     
-//    func goToSignUp() {
-//        coordinator?.signUp()
-//    }
-//    
-//    func goToHome() {
-//        coordinator?.home()
-//    }
+    func logout() {
+        interactor.logout()
+        coordinator?.goToLogin()
+    }
 }

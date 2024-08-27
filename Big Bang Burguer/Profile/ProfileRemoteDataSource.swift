@@ -1,20 +1,25 @@
 //
-//  SignUpRemoteDataSource.swift
+//  ProfileRemoteDataSource.swift
 //  Big Bang Burguer
 //
-//  Created by Jefferson Oliveira de Araujo on 24/07/24.
+//  Created by Jefferson Oliveira de Araujo on 19/08/24.
 //
 
 import Foundation
 
-class SignUpRemoteDataSource {
-    static let shared = SignUpRemoteDataSource()
+class ProfileRemoteDataSource {
     
-    func createUser(request: SignUpRequest, completion: @escaping (Bool?, String?) -> Void) {
-        WebService.shared.call(path: .createUser, body: request, method: .post) { result in
+    static let shared = ProfileRemoteDataSource()
+    
+    func fetch(completion: @escaping (UserResponse?, String?) -> Void) {
+        
+        WebService.shared.call(path: .me, body: Optional<FeedRequest>.none, method: .get) { result in
+            
             switch result {
-            case .success(_):
-                completion(true, nil)
+            case .success(let data):
+                guard let data else { return }
+                let response = try? JSONDecoder().decode(UserResponse.self, from: data)
+                completion(response, nil)
                 break
                 
             case .failure(let error, let data):
@@ -26,11 +31,6 @@ class SignUpRemoteDataSource {
                     completion(nil, response?.detail.message)
                     break
                     
-                case .badRequest:
-                    let response = try? JSONDecoder().decode(ResponseError.self, from: data)
-                    completion(nil, response?.detail)
-                    break
-                    
                 case .internalError:
                     completion(nil, String(data: data, encoding: .utf8))
                     break
@@ -40,6 +40,7 @@ class SignUpRemoteDataSource {
                     completion(nil, response?.detail)
                     break
                 }
+                
                 break
             }
         }

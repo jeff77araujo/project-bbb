@@ -41,13 +41,10 @@ class FeedTableViewCell: UITableViewCell {
     }
     
     override func layoutSubviews() {
-//        collectionView.frame = contentView.bounds
         collectionView.frame = CGRect(x: 5, y: 0, width: bounds.size.width - 5, height: bounds.size.height - 5)
     }
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+    required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
 }
 
 // MARK: - CONFIG COLLECTION VIEW

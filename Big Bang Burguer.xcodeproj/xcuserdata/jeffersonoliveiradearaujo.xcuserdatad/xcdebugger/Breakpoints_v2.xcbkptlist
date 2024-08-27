@@ -7,86 +7,8 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E032EDFA-8F4F-489E-A2CC-C5800E060B80"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Big Bang Burguer/SignUp/View/SignUpViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
-            landmarkName = "registerDidTap(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "E032EDFA-8F4F-489E-A2CC-C5800E060B80 - a35fa7a6e54bb9e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Big_Bang_Burguer.SignUpViewController.registerDidTap(__C.UIButton) -&gt; ()"
-                  moduleName = "Big Bang Burguer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jeffersonoliveiradearaujo/Developer/iOS/iOS%20com%20Tiago%20Aguiar/ViewCode-Tiago-Aguiar/Big%20Bang%20Burguer/Big%20Bang%20Burguer/SignUp/View/SignUpViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "83"
-                  endingLineNumber = "83"
-                  offsetFromSymbolStart = "52">
-               </Location>
-               <Location
-                  uuid = "E032EDFA-8F4F-489E-A2CC-C5800E060B80 - a35fa7a6e54bc96"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Big_Bang_Burguer.SignUpViewController.registerDidTap(__C.UIButton) -&gt; ()"
-                  moduleName = "Big Bang Burguer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jeffersonoliveiradearaujo/Developer/iOS/iOS%20com%20Tiago%20Aguiar/ViewCode-Tiago-Aguiar/Big%20Bang%20Burguer/Big%20Bang%20Burguer/SignUp/View/SignUpViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "91"
-                  endingLineNumber = "91"
-                  offsetFromSymbolStart = "52">
-               </Location>
-               <Location
-                  uuid = "E032EDFA-8F4F-489E-A2CC-C5800E060B80 - a35fa7a6e54bc6b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Big_Bang_Burguer.SignUpViewController.registerDidTap(__C.UIButton) -&gt; ()"
-                  moduleName = "Big Bang Burguer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jeffersonoliveiradearaujo/Developer/iOS/iOS%20com%20Tiago%20Aguiar/ViewCode-Tiago-Aguiar/Big%20Bang%20Burguer/Big%20Bang%20Burguer/SignUp/View/SignUpViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "96"
-                  endingLineNumber = "96"
-                  offsetFromSymbolStart = "52">
-               </Location>
-               <Location
-                  uuid = "E032EDFA-8F4F-489E-A2CC-C5800E060B80 - a35fa7a6e54b218"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Big_Bang_Burguer.SignUpViewController.registerDidTap(__C.UIButton) -&gt; ()"
-                  moduleName = "Big Bang Burguer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jeffersonoliveiradearaujo/Developer/iOS/iOS%20com%20Tiago%20Aguiar/ViewCode-Tiago-Aguiar/Big%20Bang%20Burguer/Big%20Bang%20Burguer/SignUp/View/SignUpViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "141"
-                  endingLineNumber = "141"
-                  offsetFromSymbolStart = "36">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "B6B296B3-EE29-4DAB-9E65-CAD74E520537"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Big Bang Burguer/SignUp/ViewModel/SignUpViewModel.swift"
@@ -99,7 +21,7 @@
             <Locations>
                <Location
                   uuid = "B6B296B3-EE29-4DAB-9E65-CAD74E520537 - 83079bcedbe15f3b"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "Big_Bang_Burguer.SignUpViewModel.send() -&gt; ()"
@@ -114,7 +36,7 @@
                </Location>
                <Location
                   uuid = "B6B296B3-EE29-4DAB-9E65-CAD74E520537 - 83079bcedbe1a0a7"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "Big_Bang_Burguer.SignUpViewModel.send() -&gt; ()"
@@ -129,7 +51,7 @@
                </Location>
                <Location
                   uuid = "B6B296B3-EE29-4DAB-9E65-CAD74E520537 - 83079bcedbe1a0a7"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "Big_Bang_Burguer.SignUpViewModel.send() -&gt; ()"
@@ -142,116 +64,50 @@
                   endingLineNumber = "38"
                   offsetFromSymbolStart = "296">
                </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "1E76EC0A-1312-4371-BBE8-A4E2B1C6524A"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Big Bang Burguer/Common/View/DefaultTextField.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
-            landmarkName = "tintColor"
-            landmarkType = "24">
-            <Locations>
                <Location
-                  uuid = "1E76EC0A-1312-4371-BBE8-A4E2B1C6524A - efc6ded7c9c7528b"
-                  shouldBeEnabled = "Yes"
+                  uuid = "B6B296B3-EE29-4DAB-9E65-CAD74E520537 - dc8f0044867a4994"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Big_Bang_Burguer.DefaultTextField.backgroundColor.willset : Swift.Optional&lt;__C.UIColor&gt;"
+                  symbolName = "Big_Bang_Burguer.SignUpViewModel.send() -&gt; ()"
                   moduleName = "Big Bang Burguer"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jeffersonoliveiradearaujo/Developer/iOS/iOS%20com%20Tiago%20Aguiar/ViewCode-Tiago-Aguiar/Big%20Bang%20Burguer/Big%20Bang%20Burguer/Common/View/DefaultTextField.swift"
+                  urlString = "file:///Users/jeffersonoliveiradearaujo/Developer/iOS/iOS-Tiago-Aguiar/ViewCode/Big-Bang-Burguer/Big%20Bang%20Burguer/SignUp/ViewModel/SignUpViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "70"
-                  endingLineNumber = "70"
-                  offsetFromSymbolStart = "88">
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "296">
                </Location>
                <Location
-                  uuid = "1E76EC0A-1312-4371-BBE8-A4E2B1C6524A - 2535f1c972e7f84d"
-                  shouldBeEnabled = "Yes"
+                  uuid = "B6B296B3-EE29-4DAB-9E65-CAD74E520537 - dc8f0044867a4994"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Big_Bang_Burguer.DefaultTextField.tintColor.willset : Swift.Optional&lt;__C.UIColor&gt;"
+                  symbolName = "Big_Bang_Burguer.SignUpViewModel.send() -&gt; ()"
                   moduleName = "Big Bang Burguer"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jeffersonoliveiradearaujo/Developer/iOS/iOS%20com%20Tiago%20Aguiar/ViewCode-Tiago-Aguiar/Big%20Bang%20Burguer/Big%20Bang%20Burguer/Common/View/DefaultTextField.swift"
+                  urlString = "file:///Users/jeffersonoliveiradearaujo/Developer/iOS/iOS-Tiago-Aguiar/ViewCode/Big-Bang-Burguer/Big%20Bang%20Burguer/SignUp/ViewModel/SignUpViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "71"
-                  endingLineNumber = "71"
-                  offsetFromSymbolStart = "36">
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "48">
                </Location>
                <Location
-                  uuid = "1E76EC0A-1312-4371-BBE8-A4E2B1C6524A - 2535f1c972e7fa1b"
-                  shouldBeEnabled = "Yes"
+                  uuid = "B6B296B3-EE29-4DAB-9E65-CAD74E520537 - dc8f0044867a4994"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Big_Bang_Burguer.DefaultTextField.tintColor.willset : Swift.Optional&lt;__C.UIColor&gt;"
+                  symbolName = "Big_Bang_Burguer.SignUpViewModel.send() -&gt; ()"
                   moduleName = "Big Bang Burguer"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jeffersonoliveiradearaujo/Developer/iOS/iOS%20com%20Tiago%20Aguiar/ViewCode-Tiago-Aguiar/Big%20Bang%20Burguer/Big%20Bang%20Burguer/Common/View/DefaultTextField.swift"
+                  urlString = "file:///Users/jeffersonoliveiradearaujo/Developer/iOS/iOS-Tiago-Aguiar/ViewCode/Big-Bang-Burguer/Big%20Bang%20Burguer/SignUp/ViewModel/SignUpViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "89"
-                  endingLineNumber = "89"
-                  offsetFromSymbolStart = "36">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D424ACA3-AD7B-442B-B62B-0D32466702B9"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Big Bang Burguer/SignIn/View/SignInViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "164"
-            endingLineNumber = "164"
-            landmarkName = "viewModelDidChanged(state:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "D424ACA3-AD7B-442B-B62B-0D32466702B9 - 6e48d0df63bbea33"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Big_Bang_Burguer.SignInViewController.viewModelDidChanged(state: Big_Bang_Burguer.SigInState) -&gt; ()"
-                  moduleName = "Big Bang Burguer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jeffersonoliveiradearaujo/Developer/iOS/iOS%20com%20Tiago%20Aguiar/ViewCode-Tiago-Aguiar/Big%20Bang%20Burguer/Big%20Bang%20Burguer/SignIn/View/SignInViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "164"
-                  endingLineNumber = "164"
-                  offsetFromSymbolStart = "556">
-               </Location>
-               <Location
-                  uuid = "D424ACA3-AD7B-442B-B62B-0D32466702B9 - 6e48d0df63bbea33"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Big_Bang_Burguer.SignInViewController.viewModelDidChanged(state: Big_Bang_Burguer.SigInState) -&gt; ()"
-                  moduleName = "Big Bang Burguer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jeffersonoliveiradearaujo/Developer/iOS/iOS%20com%20Tiago%20Aguiar/ViewCode-Tiago-Aguiar/Big%20Bang%20Burguer/Big%20Bang%20Burguer/SignIn/View/SignInViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "164"
-                  endingLineNumber = "164"
-                  offsetFromSymbolStart = "580">
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "96">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -260,46 +116,46 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "40D189CA-BD85-487E-8A89-7F53CDBA0182"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Big Bang Burguer/SignIn/View/SignInViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "162"
-            endingLineNumber = "162"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
             landmarkName = "viewModelDidChanged(state:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "40D189CA-BD85-487E-8A89-7F53CDBA0182 - 6e48d0df63bbe9fd"
+                  uuid = "40D189CA-BD85-487E-8A89-7F53CDBA0182 - b483517ce33f17a1"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "Big_Bang_Burguer.SignInViewController.viewModelDidChanged(state: Big_Bang_Burguer.SigInState) -&gt; ()"
                   moduleName = "Big Bang Burguer"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jeffersonoliveiradearaujo/Developer/iOS/iOS%20com%20Tiago%20Aguiar/ViewCode-Tiago-Aguiar/Big%20Bang%20Burguer/Big%20Bang%20Burguer/SignIn/View/SignInViewController.swift"
+                  urlString = "file:///Users/jeffersonoliveiradearaujo/Developer/iOS/iOS-Tiago-Aguiar/ViewCode/Big-Bang-Burguer/Big%20Bang%20Burguer/SignIn/View/SignInViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "162"
-                  endingLineNumber = "162"
-                  offsetFromSymbolStart = "452">
+                  startingLineNumber = "137"
+                  endingLineNumber = "137"
+                  offsetFromSymbolStart = "460">
                </Location>
                <Location
-                  uuid = "40D189CA-BD85-487E-8A89-7F53CDBA0182 - 6e48d0df63bbe9fd"
+                  uuid = "40D189CA-BD85-487E-8A89-7F53CDBA0182 - b483517ce33f17a1"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "Big_Bang_Burguer.SignInViewController.viewModelDidChanged(state: Big_Bang_Burguer.SigInState) -&gt; ()"
                   moduleName = "Big Bang Burguer"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jeffersonoliveiradearaujo/Developer/iOS/iOS%20com%20Tiago%20Aguiar/ViewCode-Tiago-Aguiar/Big%20Bang%20Burguer/Big%20Bang%20Burguer/SignIn/View/SignInViewController.swift"
+                  urlString = "file:///Users/jeffersonoliveiradearaujo/Developer/iOS/iOS-Tiago-Aguiar/ViewCode/Big-Bang-Burguer/Big%20Bang%20Burguer/SignIn/View/SignInViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "162"
-                  endingLineNumber = "162"
-                  offsetFromSymbolStart = "468">
+                  startingLineNumber = "137"
+                  endingLineNumber = "137"
+                  offsetFromSymbolStart = "456">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -307,113 +163,590 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "0E02A683-7D57-4655-B5D4-5566834AA1B4"
+            uuid = "1DDFF62C-BDCC-402A-BF01-BB4D38A12C94"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Big Bang Burguer/Profile/View/ProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "viewDidAppear(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1DDFF62C-BDCC-402A-BF01-BB4D38A12C94 - d004bb1250a4dd4b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Big_Bang_Burguer.ProfileViewController.viewDidAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "Big Bang Burguer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jeffersonoliveiradearaujo/Developer/iOS/iOS-Tiago-Aguiar/ViewCode/Big-Bang-Burguer/Big%20Bang%20Burguer/Profile/View/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "1256">
+               </Location>
+               <Location
+                  uuid = "1DDFF62C-BDCC-402A-BF01-BB4D38A12C94 - d004bb1250a4dd4b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Big_Bang_Burguer.ProfileViewController.viewDidAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "Big Bang Burguer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jeffersonoliveiradearaujo/Developer/iOS/iOS-Tiago-Aguiar/ViewCode/Big-Bang-Burguer/Big%20Bang%20Burguer/Profile/View/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "1208">
+               </Location>
+               <Location
+                  uuid = "1DDFF62C-BDCC-402A-BF01-BB4D38A12C94 - d004bb1250a4ddb6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Big_Bang_Burguer.ProfileViewController.viewDidAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "Big Bang Burguer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jeffersonoliveiradearaujo/Developer/iOS/iOS-Tiago-Aguiar/ViewCode/Big-Bang-Burguer/Big%20Bang%20Burguer/Profile/View/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "1048">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D443AF6B-C7DE-4687-B987-DA9FDE219AE6"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Big Bang Burguer/SceneDelegate.swift"
+            filePath = "Big Bang Burguer/Profile/ProfileInteractor.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "scene(_:willConnectTo:options:)"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "fetch(completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "8D4C8FA9-DBD7-4491-9D43-43EA8171C1ED"
-            shouldBeEnabled = "Yes"
+            uuid = "A34A3A58-3054-4D90-B616-568BA4D9B969"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Big Bang Burguer/SceneDelegate.swift"
+            filePath = "Big Bang Burguer/SignIn/View/SignInViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
+            landmarkName = "viewModelDidChanged(state:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A34A3A58-3054-4D90-B616-568BA4D9B969 - b483517ce33f1786"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Big_Bang_Burguer.SignInViewController.viewModelDidChanged(state: Big_Bang_Burguer.SigInState) -&gt; ()"
+                  moduleName = "Big Bang Burguer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jeffersonoliveiradearaujo/Developer/iOS/iOS-Tiago-Aguiar/ViewCode/Big-Bang-Burguer/Big%20Bang%20Burguer/SignIn/View/SignInViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "484">
+               </Location>
+               <Location
+                  uuid = "A34A3A58-3054-4D90-B616-568BA4D9B969 - b483517ce33f1786"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Big_Bang_Burguer.SignInViewController.viewModelDidChanged(state: Big_Bang_Burguer.SigInState) -&gt; ()"
+                  moduleName = "Big Bang Burguer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jeffersonoliveiradearaujo/Developer/iOS/iOS-Tiago-Aguiar/ViewCode/Big-Bang-Burguer/Big%20Bang%20Burguer/SignIn/View/SignInViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "480">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C6C9C17E-6582-4480-BEDA-EA944DB71D0E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Big Bang Burguer/SignIn/ViewModel/SignInViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "39"
             endingLineNumber = "39"
-            landmarkName = "scene(_:willConnectTo:options:)"
+            landmarkName = "send()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C6C9C17E-6582-4480-BEDA-EA944DB71D0E - 401e2e0f6414f0f9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Big_Bang_Burguer.SignInViewModel.send() -&gt; ()"
+                  moduleName = "Big Bang Burguer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jeffersonoliveiradearaujo/Developer/iOS/iOS-Tiago-Aguiar/ViewCode/Big-Bang-Burguer/Big%20Bang%20Burguer/SignIn/ViewModel/SignInViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "C6C9C17E-6582-4480-BEDA-EA944DB71D0E - f0140070bc1e8d10"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Big_Bang_Burguer.SignInResponse&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; () in Big_Bang_Burguer.SignInViewModel.send() -&gt; ()"
+                  moduleName = "Big Bang Burguer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jeffersonoliveiradearaujo/Developer/iOS/iOS-Tiago-Aguiar/ViewCode/Big-Bang-Burguer/Big%20Bang%20Burguer/SignIn/ViewModel/SignInViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "200">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "25138ACF-3BE7-47EB-A9C0-3362FAB674F3"
-            shouldBeEnabled = "Yes"
+            uuid = "341B0812-D61F-432D-898E-9497B614751F"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Big Bang Burguer/SceneDelegate.swift"
+            filePath = "Big Bang Burguer/SignIn/ViewModel/SignInViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "scene(_:willConnectTo:options:)"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "send()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "FE5E4D75-0E1A-4233-8FEE-6FEBDEF6BB25"
-            shouldBeEnabled = "Yes"
+            uuid = "E2A8A895-92A4-494D-BF9B-678CF6FC5F00"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Big Bang Burguer/SceneDelegate.swift"
+            filePath = "Big Bang Burguer/SignIn/ViewModel/SignInViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "send()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "95C50E7C-99EB-4431-85C2-827D3FC89ABB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Big Bang Burguer/SignIn/Interactor/SignInInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "login(request:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "95C50E7C-99EB-4431-85C2-827D3FC89ABB - 301f9f1f25846319"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Big_Bang_Burguer.SignInInteractor.login(request: Big_Bang_Burguer.SignInRequest, completion: (Swift.Optional&lt;Big_Bang_Burguer.SignInResponse&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Big Bang Burguer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jeffersonoliveiradearaujo/Developer/iOS/iOS-Tiago-Aguiar/ViewCode/Big-Bang-Burguer/Big%20Bang%20Burguer/SignIn/Interactor/SignInInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "95C50E7C-99EB-4431-85C2-827D3FC89ABB - fde645ab1400adb9"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Big_Bang_Burguer.SignInResponse&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; () in Big_Bang_Burguer.SignInInteractor.login(request: Big_Bang_Burguer.SignInRequest, completion: (Swift.Optional&lt;Big_Bang_Burguer.SignInResponse&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Big Bang Burguer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jeffersonoliveiradearaujo/Developer/iOS/iOS-Tiago-Aguiar/ViewCode/Big-Bang-Burguer/Big%20Bang%20Burguer/SignIn/Interactor/SignInInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "300">
+               </Location>
+               <Location
+                  uuid = "95C50E7C-99EB-4431-85C2-827D3FC89ABB - fde645ab1400ad66"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Big_Bang_Burguer.SignInResponse&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; () in Big_Bang_Burguer.SignInInteractor.login(request: Big_Bang_Burguer.SignInRequest, completion: (Swift.Optional&lt;Big_Bang_Burguer.SignInResponse&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Big Bang Burguer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jeffersonoliveiradearaujo/Developer/iOS/iOS-Tiago-Aguiar/ViewCode/Big-Bang-Burguer/Big%20Bang%20Burguer/SignIn/Interactor/SignInInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "332">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "411C93CF-EF14-461C-ABE9-13E43A711DCB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Big Bang Burguer/SignIn/Interactor/SignInInteractor.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "27"
             endingLineNumber = "27"
-            landmarkName = "scene(_:willConnectTo:options:)"
+            landmarkName = "login(request:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "449BC1D4-BA20-421B-84F4-446A74BDD6C1"
-            shouldBeEnabled = "Yes"
+            uuid = "BB754413-1814-40C3-8363-21779CF8A2E4"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Big Bang Burguer/SceneDelegate.swift"
+            filePath = "Big Bang Burguer/SignIn/Interactor/SignInRemoteDataSource.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "scene(_:willConnectTo:options:)"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "login(request:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D8E2A3CA-2571-4BF8-B792-024E38BC8EB0"
-            shouldBeEnabled = "Yes"
+            uuid = "82F6E182-D3FD-4F64-A581-CE592BD3AEFC"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Big Bang Burguer/SceneDelegate.swift"
+            filePath = "Big Bang Burguer/SignIn/Interactor/SignInInteractor.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "scene(_:willConnectTo:options:)"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "login(request:completion:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "82F6E182-D3FD-4F64-A581-CE592BD3AEFC - fde645ab1400ad66"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Big_Bang_Burguer.SignInResponse&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; () in Big_Bang_Burguer.SignInInteractor.login(request: Big_Bang_Burguer.SignInRequest, completion: (Swift.Optional&lt;Big_Bang_Burguer.SignInResponse&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Big Bang Burguer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jeffersonoliveiradearaujo/Developer/iOS/iOS-Tiago-Aguiar/ViewCode/Big-Bang-Burguer/Big%20Bang%20Burguer/SignIn/Interactor/SignInInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "332">
+               </Location>
+               <Location
+                  uuid = "82F6E182-D3FD-4F64-A581-CE592BD3AEFC - fde645ab1400ad66"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Big_Bang_Burguer.SignInResponse&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; () in Big_Bang_Burguer.SignInInteractor.login(request: Big_Bang_Burguer.SignInRequest, completion: (Swift.Optional&lt;Big_Bang_Burguer.SignInResponse&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Big Bang Burguer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jeffersonoliveiradearaujo/Developer/iOS/iOS-Tiago-Aguiar/ViewCode/Big-Bang-Burguer/Big%20Bang%20Burguer/SignIn/Interactor/SignInInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "396">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "AAE21370-8BA3-4FD8-BAE2-C34B63FFE7DF"
+            uuid = "798240A9-DF83-4ED7-AA65-8BC771217343"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Big Bang Burguer/SignIn/View/SignInViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "SignInViewController"
+            landmarkType = "21">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9475CD4E-29E9-4C78-B925-83905BF4A51E"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Big Bang Burguer/SceneDelegate.swift"
+            filePath = "Big Bang Burguer/Profile/View/ProfileViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "scene(_:willConnectTo:options:)"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "viewModelDidChanged(state:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9475CD4E-29E9-4C78-B925-83905BF4A51E - 2f6f8af5f6819d38"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Big_Bang_Burguer.ProfileViewController.viewModelDidChanged(state: Big_Bang_Burguer.ProfileState) -&gt; ()"
+                  moduleName = "Big Bang Burguer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jeffersonoliveiradearaujo/Developer/iOS/iOS-Tiago-Aguiar/ViewCode/Big-Bang-Burguer/Big%20Bang%20Burguer/Profile/View/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "2108">
+               </Location>
+               <Location
+                  uuid = "9475CD4E-29E9-4C78-B925-83905BF4A51E - 2f6f8af5f6819d38"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Big_Bang_Burguer.ProfileViewController.viewModelDidChanged(state: Big_Bang_Burguer.ProfileState) -&gt; ()"
+                  moduleName = "Big Bang Burguer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jeffersonoliveiradearaujo/Developer/iOS/iOS-Tiago-Aguiar/ViewCode/Big-Bang-Burguer/Big%20Bang%20Burguer/Profile/View/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "1820">
+               </Location>
+               <Location
+                  uuid = "9475CD4E-29E9-4C78-B925-83905BF4A51E - 2f6f8af5f6819d38"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Big_Bang_Burguer.ProfileViewController.viewModelDidChanged(state: Big_Bang_Burguer.ProfileState) -&gt; ()"
+                  moduleName = "Big Bang Burguer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jeffersonoliveiradearaujo/Developer/iOS/iOS-Tiago-Aguiar/ViewCode/Big-Bang-Burguer/Big%20Bang%20Burguer/Profile/View/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "1796">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4A9833BB-5539-4B3C-80E4-0029518BC39E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Big Bang Burguer/Profile/ProfileViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "state"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "35F4F72A-6175-42DA-B5EF-28606688D2ED"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Big Bang Burguer/Profile/View/ProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "viewModelDidChanged(state:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "35F4F72A-6175-42DA-B5EF-28606688D2ED - 2f6f8af5f6819c27"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Big_Bang_Burguer.ProfileViewController.viewModelDidChanged(state: Big_Bang_Burguer.ProfileState) -&gt; ()"
+                  moduleName = "Big Bang Burguer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jeffersonoliveiradearaujo/Developer/iOS/iOS-Tiago-Aguiar/ViewCode/Big-Bang-Burguer/Big%20Bang%20Burguer/Profile/View/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "1156">
+               </Location>
+               <Location
+                  uuid = "35F4F72A-6175-42DA-B5EF-28606688D2ED - 2f6f8af5f6819c27"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Big_Bang_Burguer.ProfileViewController.viewModelDidChanged(state: Big_Bang_Burguer.ProfileState) -&gt; ()"
+                  moduleName = "Big Bang Burguer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jeffersonoliveiradearaujo/Developer/iOS/iOS-Tiago-Aguiar/ViewCode/Big-Bang-Burguer/Big%20Bang%20Burguer/Profile/View/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "276">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "652F3790-EF4E-4F79-8F9D-A0468627A562"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Big Bang Burguer/Profile/View/ProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "viewModelDidChanged(state:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "652F3790-EF4E-4F79-8F9D-A0468627A562 - 2f6f8af5f6819c06"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Big_Bang_Burguer.ProfileViewController.viewModelDidChanged(state: Big_Bang_Burguer.ProfileState) -&gt; ()"
+                  moduleName = "Big Bang Burguer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jeffersonoliveiradearaujo/Developer/iOS/iOS-Tiago-Aguiar/ViewCode/Big-Bang-Burguer/Big%20Bang%20Burguer/Profile/View/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "1324">
+               </Location>
+               <Location
+                  uuid = "652F3790-EF4E-4F79-8F9D-A0468627A562 - 2f6f8af5f6819c06"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Big_Bang_Burguer.ProfileViewController.viewModelDidChanged(state: Big_Bang_Burguer.ProfileState) -&gt; ()"
+                  moduleName = "Big Bang Burguer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jeffersonoliveiradearaujo/Developer/iOS/iOS-Tiago-Aguiar/ViewCode/Big-Bang-Burguer/Big%20Bang%20Burguer/Profile/View/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "456">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "88960E63-6AE5-474D-9818-138FFA83E038"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Big Bang Burguer/Profile/View/ProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "viewModelDidChanged(state:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "88960E63-6AE5-474D-9818-138FFA83E038 - 2f6f8af5f6819c65"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Big_Bang_Burguer.ProfileViewController.viewModelDidChanged(state: Big_Bang_Burguer.ProfileState) -&gt; ()"
+                  moduleName = "Big Bang Burguer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jeffersonoliveiradearaujo/Developer/iOS/iOS-Tiago-Aguiar/ViewCode/Big-Bang-Burguer/Big%20Bang%20Burguer/Profile/View/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "772">
+               </Location>
+               <Location
+                  uuid = "88960E63-6AE5-474D-9818-138FFA83E038 - 2f6f8af5f6819c65"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Big_Bang_Burguer.ProfileViewController.viewModelDidChanged(state: Big_Bang_Burguer.ProfileState) -&gt; ()"
+                  moduleName = "Big Bang Burguer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jeffersonoliveiradearaujo/Developer/iOS/iOS-Tiago-Aguiar/ViewCode/Big-Bang-Burguer/Big%20Bang%20Burguer/Profile/View/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "748">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

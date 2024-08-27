@@ -10,5 +10,6 @@ import Foundation
 enum ProductDetailState {
     case loading
     case success(ProductResponse)
+    case successCoupon(CouponResponse)
     case error(String)
 }

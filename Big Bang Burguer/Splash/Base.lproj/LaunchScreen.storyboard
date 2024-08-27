@@ -15,12 +15,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bbburguer" translatesAutoresizingMaskIntoConstraints="NO" id="CaX-k0-oEX">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bbburger" translatesAutoresizingMaskIntoConstraints="NO" id="CaX-k0-oEX">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" red="0.13852727409999999" green="0.13852727409999999" blue="0.13852727409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.054901964960000001" green="0.078431375319999996" blue="0.11372549830000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.13852727409999999" green="0.13852727409999999" blue="0.13852727409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CaX-k0-oEX" secondAttribute="bottom" id="3WI-Jv-K99"/>
                             <constraint firstItem="CaX-k0-oEX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="CNM-ij-81z"/>
@@ -35,6 +36,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bbburguer" width="384" height="683"/>
+        <image name="bbburger" width="626" height="626"/>
     </resources>
 </document>

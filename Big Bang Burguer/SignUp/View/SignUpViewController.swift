@@ -114,11 +114,9 @@ class SignUpViewController: UIViewController {
         birthDay.error = "Data não existe"
         birthDay.failure = {
             let invalidCount = birthDay.text!.count != 10
-            let dt = DateFormatter()
-            dt.locale = Locale(identifier: "en_US_POSIX")
-            dt.dateFormat = "dd/MM/yyyy"
             
-            let date = dt.date(from: birthDay.text ?? "")
+            let date = birthDay.text?.toDate()
+            
             let invalidDate = date == nil
             
             return invalidDate || invalidCount
@@ -132,7 +130,6 @@ class SignUpViewController: UIViewController {
         create.titleColor = .black
         create.border = true
         create.enable(false)
-//        create.backgroundColor = .systemYellow
         create.addTarget(self, action: #selector(registerDidTap))
         return create
     }()
@@ -153,22 +150,28 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         navigationItem.title = "CADASTRO"
+        
         createViews()
+        
+        configureKeyboard(handle: keyboardHandle)
+        configureDismissKeyboard()
+
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
-        view.addGestureRecognizer(tap)
-    }
-    
-    @objc func dismissKeyboard(_ view: UITapGestureRecognizer) {
-        self.view.endEditing(true)
+    lazy var keyboardHandle = KeyboardHandle { visible, height in
+        if (!visible) {
+            self.scroll.contentInset = .zero
+            self.scroll.scrollIndicatorInsets = .zero
+        } else {
+            let contentInsets = UIEdgeInsets(top: 0, left: 0, bottom: height, right: 0)
+            self.scroll.contentInset = contentInsets
+            self.scroll.scrollIndicatorInsets = contentInsets
+        }
     }
 }
 
 extension SignUpViewController {
     func createViews() {
-        
         view.addSubview(name)
         view.addSubview(email)
         view.addSubview(password)
@@ -219,25 +222,19 @@ extension SignUpViewController: SignUpViewModelDelegate {
         case .loading:
             createButton.startLoading(true)
             break
+            
         case .goToLogin:
             createButton.startLoading(false)
-            alertMessage(title: "Bem vindo!", msg: "Usúario cadastrado com sucesso", true)
-//            viewModel?.goToLogin()
+            Alert(title: "Bem vindo!", message: "Usúario cadastrado com sucesso") {
+                self.viewModel?.goToLogin()
+            }.show(on: self)
+            
         case .error(let message):
             createButton.startLoading(false)
-            alertMessage(title: "Ops!", msg: message, false)
+//            Alert(title: "Ops!", message: message).show(on: self)
+            alert(message: message)
             break
         }
-    }
-    
-    private func alertMessage(title: String, msg: String, _ isCreated: Bool?) {
-        let alert = UIAlertController(title: title, message: msg, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { _ in
-            if isCreated ?? false {
-                self.viewModel?.goToLogin()
-            }
-        }))
-        self.present(alert, animated: true)
     }
 }
 
@@ -289,16 +286,5 @@ extension SignUpViewController: TextFieldDelegate {
         }
         
         return false
-    }
-}
-
-extension UIView {
-    func findViewByTag(tag: Int) -> UIView? {
-        for subview in subviews {
-            if subview.tag == tag {
-                return subview
-            }
-        }
-        return nil
     }
 }

@@ -22,26 +22,32 @@ class WebService {
     // MARK: - CALL 1
     func  call(path: String,
                method: Method,
-               accessToken: String? = nil,
                completion: @escaping (Result) -> Void) {
         
-        makeRequest(path: path, body: nil, method: method, accessToken: accessToken, completion: completion)
+        makeRequest(path: path, 
+                    body: nil,
+                    method: method,
+                    completion: completion
+        )
     }
     
     // MARK: - CALL 2
     func  call<T: Encodable>(path: Endpoint,
                              body: T?,
                              method: Method,
-                             accessToken: String? = nil,
                              completion: @escaping (Result) -> Void) {
-        makeRequest(path: path.rawValue, body: body, method: method, accessToken: accessToken, completion: completion)
+        
+        makeRequest(path: path.rawValue, 
+                    body: body,
+                    method: method,
+                    completion: completion
+        )
     }
     
     // MARK: - Make Request
     private func  makeRequest(path: String,
                               body: Encodable?,
                               method: Method,
-                              accessToken: String? = nil,
                               completion: @escaping (Result) -> Void) {
         
         guard var request = completeUrl(path: path) else { return }
@@ -56,17 +62,16 @@ class WebService {
             request.httpBody = jsonRequest
         }
         
-        if let accessToken = accessToken {
+        if let accessToken = LocalDataSource.shared.getUserAuth()?.accessToken {
             request.setValue("Bearer \(accessToken)", forHTTPHeaderField: "Authorization")
         }
         
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             print("------------------------\n\n")
-            print("Response is \(String(describing: response))")
-            print("------------------------\n\n")
+            print("WebService.makeRequest: \(String(describing: response))")
             
             if let error = error {
-                completion(.failure(.internalError, data))
+                completion(.failure(.internalError, error.localizedDescription.data(using: .utf8)))
                 print(error)
                 return
             }
@@ -107,6 +112,9 @@ extension WebService {
         case feed = "/feed"
         case highlight = "/highlight"
         case productDetail = "/products/%d"
+        case coupon = "/products/%d/coupon"
+        case me = "/users/me"
+        case coupons = "/coupons"
     }
     
     enum Method: String {

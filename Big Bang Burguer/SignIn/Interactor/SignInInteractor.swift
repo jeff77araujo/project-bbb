@@ -14,17 +14,17 @@ class SignInInteractor {
     
     func login(request: SignInRequest, completion: @escaping (SignInResponse?, String?) -> Void) {
         remote.login(request: request) { response, error in
-            guard let response else { return }
             
-            let userAuth = UserAuth(accessToken: response.accessToken,
-                                    refreshToken: response.refreshToken,
-                                    expiresSeconds: Int(Date().timeIntervalSince1970) + response.expiresSeconds,
-                                    tokenType: response.tokenType)
-            
-            self.local.insertUserAuth(userAuth: userAuth )
+            if let response = response {
+                let userAuth = UserAuth(accessToken: response.accessToken,
+                                        refreshToken: response.refreshToken,
+                                        expiresSeconds: Int(Date().timeIntervalSince1970 + Double(response.expiresSeconds)),
+                                        tokenType: response.tokenType)
+                
+                self.local.insertUserAuth(userAuth: userAuth)
+            }
             
             completion(response, error)
         }
     }
-
 }

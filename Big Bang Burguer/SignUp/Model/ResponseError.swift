@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct SignUpResponseError: Decodable {
+struct ResponseError: Decodable {
     let detail: String
     
     enum CodingKeys: CodingKey {

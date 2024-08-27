@@ -13,7 +13,7 @@ class SignInCoordinator {
     private let window: UIWindow?
     private var navigationController = UINavigationController()
     
-    init(window: UIWindow?) {
+    init(_ window: UIWindow?) {
         self.window = window
         self.navigationController = UINavigationController()
     }
@@ -30,7 +30,6 @@ class SignInCoordinator {
         navigationController.pushViewController(signInVC, animated: true)
         
         window?.rootViewController = navigationController
-        
     }
     
     func signUp() {
@@ -40,7 +39,7 @@ class SignInCoordinator {
     }
     
     func home() {
-        let homeCoordinator = HomeCoordinator(window: window)
+        let homeCoordinator = HomeCoordinator(window)
         homeCoordinator.start()
     }
 }

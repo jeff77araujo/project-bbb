@@ -11,8 +11,8 @@ class SplashRemoteDataSource {
     
     static let shared = SplashRemoteDataSource()
     
-    func login(request: SplashRequest, accessToken: String, completion: @escaping (SignInResponse?, Bool?) -> Void) {
-        WebService.shared.call(path: .refreshToken, body: request, method: .put, accessToken: accessToken) { result in
+    func login(request: SplashRequest, completion: @escaping (SignInResponse?, Bool?) -> Void) {
+        WebService.shared.call(path: .refreshToken, body: request, method: .put) { result in
             switch result {
             case .success(let data):
                 guard let data else { return }

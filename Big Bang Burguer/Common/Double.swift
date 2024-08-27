@@ -9,11 +9,8 @@ import Foundation
 
 extension Double {
     func decimalNumbers() -> String? {
-//        let numberOfDecimals = 2
         
         let formatter = NumberFormatter()
-//        formatter.minimumFractionDigits = numberOfDecimals
-//        formatter.maximumFractionDigits = numberOfDecimals
         formatter.numberStyle = .currency
         formatter.locale = Locale(identifier: "PT-BR")
 

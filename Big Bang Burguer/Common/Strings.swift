@@ -7,27 +7,46 @@
 
 import Foundation
 
+// MARK: - VALIDADOR DE EMAIL
 extension String {
-    
     func isEmail() -> Bool {
-        let regEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        // Expressão regular revisada e simplificada
+        let regEx = "^[A-Z0-9a-z._%+-]+@[A-Z0-9a-z.-]+\\.[A-Za-z]{2,64}$"
         
-        return NSPredicate(format: "SELF MATCHES %@", regEx).evaluate(with: self)
-    }
-    
-// MARK: Metodo para retirar todos os caracteres que não sejam números, e junto tudo numa unica string
-    var digits: String {
-        return components(separatedBy: CharacterSet.decimalDigits.inverted).joined()
-    }
-    
-    func charAtIndex(index: Int) -> Character? {
-        var indexCurrent = 0
-        for char in self {
-            if index == indexCurrent {
-                return char
-            }
-            indexCurrent += 1
+        do {
+            let regex = try NSRegularExpression(pattern: regEx, options: [.caseInsensitive])
+            return regex.firstMatch(in: self, options: [], range: NSRange(location: 0, length: self.utf16.count)) != nil
+        } catch {
+            return false
         }
-        return nil
+    }
+}
+
+// MARK: - APENAS NUMEROS
+extension String {
+    // Método para remover todos os caracteres que não sejam números
+    var onlyNumbers: String {
+        return self.filter { $0.isNumber }
+    }
+}
+
+// MARK: - GET INDEX
+extension String {
+    // Acesso a um caractere no índice de maneira mais segura
+    func charAtIndex(at index: Int) -> Character? {
+        guard index >= 0 && index < self.count else { return nil }
+        return self[self.index(self.startIndex, offsetBy: index)]
+    }
+}
+
+// MARK: - FORMATADOR DE DATA
+extension String {
+    func toDate(dateFormat: String = "dd/MM/yyyy") -> Date? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+        dateFormatter.dateFormat = dateFormat
+                
+        return dateFormatter.date(from: self)
+
     }
 }

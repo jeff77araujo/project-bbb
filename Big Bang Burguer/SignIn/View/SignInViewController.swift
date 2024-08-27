@@ -35,7 +35,6 @@ class SignInViewController: UIViewController {
         email.border = true
         email.delegate = self
         email.keyboard = .emailAddress
-//        email.failure = validation
         email.bitmask = SignInForm.email.rawValue
         email.error = "E-mail inválido"
         email.failure = {
@@ -43,11 +42,6 @@ class SignInViewController: UIViewController {
         }
         return email
     }()
-    
-    // MARK: - referencia tradicional da linha 38
-    func validation() -> Bool {
-        return !(email.text?.isEmail() ?? false)
-    }
     
     lazy var password: DefaultTextField = {
         let password = DefaultTextField()
@@ -106,45 +100,23 @@ class SignInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        navigationItem.title = "LOGIN"
+        navigationItem.title = "INICIO"
+        
         createViews()
         
-        // Observador que será disparado baseado no evento do teclado: quando ele aparece ou desaparece
-        NotificationCenter.default.addObserver(self, selector: #selector(onKeyboardNotification), name: UIResponder.keyboardWillHideNotification, object: nil)
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(onKeyboardNotification), name: UIResponder.keyboardWillShowNotification, object: nil)
+        configureKeyboard(handle: keyboardHandle)
+        configureDismissKeyboard()
     }
     
-    @objc func onKeyboardNotification(_ notification: Notification) {
-        let visible = notification.name == UIResponder.keyboardWillShowNotification
-        
-        let keyboardFrame = visible
-        ? UIResponder.keyboardFrameEndUserInfoKey
-        : UIResponder.keyboardFrameBeginUserInfoKey
-        
-        if let keyboardSize = (notification.userInfo?[keyboardFrame] as? NSValue)?.cgRectValue {
-            onKeyboardChanged(visible, height: keyboardSize.height)
-        }
-    }
-    
-    func onKeyboardChanged(_ visible: Bool, height: CGFloat) {
+    lazy var keyboardHandle = KeyboardHandle { visible, height in
         if (!visible) {
-            scroll.contentInset = .zero
-            scroll.scrollIndicatorInsets = .zero
+            self.scroll.contentInset = .zero
+            self.scroll.scrollIndicatorInsets = .zero
         } else {
             let contentInsets = UIEdgeInsets(top: 0, left: 0, bottom: height, right: 0)
-            scroll.contentInset = contentInsets
-            scroll.scrollIndicatorInsets = contentInsets
+            self.scroll.contentInset = contentInsets
+            self.scroll.scrollIndicatorInsets = contentInsets
         }
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
-        view.addGestureRecognizer(tap)
-    }
-    
-    @objc func dismissKeyboard(_ view: UITapGestureRecognizer) {
-        self.view.endEditing(true)
     }
 }
 
@@ -153,30 +125,27 @@ extension SignInViewController: SignInViewModelDelegate {
         switch(state) {
         case .none:
             break
+            
         case .loading:
             enterButton.startLoading(true)
             break
+            
         case .goToHome:
             enterButton.startLoading(false)
             viewModel?.goToHome()
+            
         case .error(let message):
             enterButton.startLoading(false)
-            alertMessage(msg: message)
-            print("ERRORRRRR: \(message)")
+//            Alert(title: "Ops!", message: message).show(on: self)
+            alert(message: message)
+            
             break
         }
-    }
-    
-    func alertMessage(msg: String) {
-        let alert = UIAlertController(title: "Ops!", message: msg, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: .default))
-        self.present(alert, animated: true)
     }
 }
 
 extension SignInViewController {
     func createViews() {
-        
         view.addSubview(email)
         view.addSubview(password)
         view.addSubview(enterButton)
@@ -208,7 +177,6 @@ extension SignInViewController {
 }
 
 extension SignInViewController: TextFieldDelegate {
-    
     func textFieldDidChanged(isValid: Bool, bitmask: Int, text: String) {
         if isValid {
             bitmaskResult = bitmaskResult | bitmask
